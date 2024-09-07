@@ -1,0 +1,7 @@
+┌ Info: 2023-06-02 06:47:18 Watching ["C:\\Users\\EIrruzel\\.julia\\geniebuilder\\apps\\steamdataapp"]
+└ @ GenieAutoReload C:\Users\EIrruzel\.julia\packages\GenieAutoReload\IuBCb\src\GenieAutoReload.jl:19
+┌ Info: 2023-06-02 06:47:21 
+│ Web Server starting at http://0.0.0.0:9101 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\EIrruzel\.julia\packages\Genie\Jummj\src\Server.jl:161
+┌ Info: 2023-06-02 06:47:22 Listening on: 0.0.0.0:9101, thread id: 1
+└ @ HTTP.Servers C:\Users\EIrruzel\.julia\packages\HTTP\GN0N3\src\Servers.jl:366

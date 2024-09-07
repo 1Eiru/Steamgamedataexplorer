@@ -1,0 +1,44 @@
+<header class="st-header q-pa-sm"></header>
+<header class="st-header q-pa-sm">
+    <h1 class="st-header__title text-h3"><span id="i66ea"><b>SteamGames Data explorer <br /> Исследование данных </b></span></h1>
+</header>
+<div class="row">
+    <div class="col col-4 col-sm">
+        <div class="row">
+            <div class="col col-12">
+                <h6>Year</h6>
+                <q-range :min="1970" v-model="year" label="" :max="2023" label-always="" :left-label-value="'Min year: ' + year.min" :step="1" :right-label-value="'Max year: ' + year.max"></q-range>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-12">
+                <h6>Score</h6>
+                <q-range :min="0" v-model="score" label="" :max="97" label-always="" :left-label-value="'Min score: ' + score.min" :step="1" :right-label-value="'Max score: ' + score.max"></q-range>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-12">
+                <h6>Excellent titles</h6>
+                <div v-text="excellent_titles">Placeholder</div>
+                <h6>Data found</h6>
+                <div v-text="data_count">Placeholder</div>
+            </div>
+        </div>
+    </div>
+    <div class="col col-4 col-sm">
+        <p><span id="ihi5q">Data plot</span></p>
+        <plotly :data="dataplot"></plotly>
+        <p><span id="imtxl">PieChart</span></p>
+        <plotly :data="piechart"></plotly>
+        <p>
+        <div id="iyxyw"><i id="iuhcz" draggable="true">(Score &gt;= 90) - Excellent<br id="izxho" draggable="true" />(Score &gt;= 80) - Good<br id="iyk75" draggable="true" />(Score &gt;= 70) - Average<br id="idafj" draggable="true" />(Score &lt; 70) - Below Average</i></div>
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col col-12 col-sm">
+        <p><span id="i7z0t">Data table</span></p>
+        <%table(:datatable; dense=true, flat=true, style="height: 350px;", pagination=:datatablepagination)%>
+        <h3><span id="if1co">Excel file by @evlko and @sadari</span></h3>
+    </div>
+</div>
